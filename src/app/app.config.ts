@@ -3,7 +3,8 @@ import { provideRouter, withHashLocation, withInMemoryScrolling } from '@angular
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withInMemoryScrolling({ anchorScrolling: "enabled" })), provideClientHydration()]
+  providers: [provideRouter(routes, withInMemoryScrolling({ anchorScrolling: "enabled" })), provideClientHydration(), provideAnimations()]
 };

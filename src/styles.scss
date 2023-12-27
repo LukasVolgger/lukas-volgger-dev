@@ -94,13 +94,10 @@ code {
     height: 56px;
 }
 
-.link-color {
-    color: var(--link-col);
-}
-
 .nav-link {
     color: var(--link-col);
     border-bottom: solid 2px transparent;
+    cursor: pointer;
 
     &:hover {
         color: var(--black-col);
@@ -119,30 +116,6 @@ code {
     font-weight: 500;
     border-bottom: solid 2px var(--black-col);
     transition: all 125ms ease-in-out;
-}
-
-.locale-link {
-    text-decoration: none;
-    color: var(--link-col);
-
-    &:hover {
-        color: var(--black-col);
-        font-weight: 500;
-        border-bottom: solid 2px var(--black-col);
-        transition: all 125ms ease-in-out;
-    }
-}
-
-.locale-link-active {
-    text-decoration: none;
-    color: var(--black-col);
-
-    &:hover {
-        color: var(--black-col);
-        font-weight: 500;
-        border-bottom: solid 2px var(--black-col);
-        transition: all 125ms ease-in-out;
-    }
 }
 
 // ######################################################################### Media queries

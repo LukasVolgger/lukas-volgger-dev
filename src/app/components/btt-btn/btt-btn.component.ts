@@ -1,10 +1,11 @@
 import { ChangeDetectorRef, Component, OnInit, afterNextRender } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-btt-btn',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './btt-btn.component.html',
   styleUrl: './btt-btn.component.scss'
 })

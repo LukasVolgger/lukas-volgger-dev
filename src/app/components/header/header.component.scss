@@ -1,0 +1,102 @@
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: white;
+    box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.nav-logo {
+    object-fit: contain;
+    width: 48px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas,
+.dropdown-menu {
+    border: none;
+}
+
+.offcanvas {
+    box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    .container-fluid {
+        gap: 32px;
+    }
+}
+
+@media (min-width: 360px) {
+    .navbar-mobile {
+        display: flex;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    .container-fluid {
+        gap: 32px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .navbar-mobile {
+        display: none;
+    }
+
+    .navbar-desktop {
+        display: flex;
+    }
+
+    .container-fluid {
+        gap: 64px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .container-fluid {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,57 @@
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 28px;
+    right: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+
+    img {
+        padding: 18px;
+        // Change color to white on hover
+        // &:hover {
+        //     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(4370%) hue-rotate(303deg) brightness(122%) contrast(100%);
+        // }
+    }
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    button {
+        bottom: 87px;
+        right: -12px;
+    }
+}
+
+@media (min-width: 360px) {
+    button {
+        bottom: 12px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    button {
+        bottom: 16px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    button {
+        bottom: 24px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    button {
+        bottom: 32px;
+    }
+}

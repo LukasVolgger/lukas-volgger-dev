@@ -1,0 +1,28 @@
+h2,
+a,
+strong {
+    line-break: anywhere;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+a {
+    color: #639DFC;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+}
+
+.toc-heading {
+    text-decoration: underline;
+}

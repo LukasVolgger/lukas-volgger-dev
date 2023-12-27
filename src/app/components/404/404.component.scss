@@ -1,0 +1,106 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 160px);
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    button {
+        width: 196px;
+    }
+}
+
+.error-404 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url('./../../../assets/img/background/network.jpg');
+    background-size: cover;
+    background-position: -141%;
+    color: transparent;
+    font-size: 256px;
+    font-weight: bold;
+    // Disable user select
+    -webkit-touch-callout: none; // iOS Safari
+    -webkit-user-select: none; // Safari
+    -khtml-user-select: none; // Konqueror HTML
+    -moz-user-select: none; // Old versions of Firefox
+    -ms-user-select: none; // Internet Explorer/Edge
+    user-select: none; // Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox
+}
+
+.hyphen {
+    width: 128px;
+    height: 2px;
+    background-color: var(--black-col);
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .content {
+        height: calc(100vh - 115px);
+    }
+
+    .error-404 {
+        font-size: 128px;
+    }
+}
+
+@media (min-width: 360px) {
+    .content {
+        height: calc(100vh - 115px);
+    }
+
+    .error-404 {
+        font-size: 128px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .content {
+        height: calc(100vh - 122px);
+    }
+
+    .error-404 {
+        font-size: 160px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .content {
+        height: calc(100vh - 154px);
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .content {
+        height: calc(100vh - 176px);
+    }
+
+    .error-404 {
+        font-size: 192px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .error-404 {
+        font-size: 224px;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .error-404 {
+        font-size: 256px;
+    }
+}

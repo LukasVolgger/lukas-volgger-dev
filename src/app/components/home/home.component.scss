@@ -1,0 +1,115 @@
+.content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-position-y: 80%;
+    background-size: cover;
+    margin-bottom: 32px;
+
+    h1 {
+        color: white;
+    }
+}
+
+.headline {
+    color: white;
+    font-size: 44px;
+}
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.arrow,
+.arrow:before {
+    position: absolute;
+    left: 50%;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    bottom: 128px;
+    margin: -20px 0 0 -20px;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    background-color: transparent;
+}
+
+.arrow:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
+}
+
+;
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .content {
+        justify-content: center;
+        // height: max-content;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .home-banner {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 360px) {
+    h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .content {
+        justify-content: center;
+        height: 100vh;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .content {
+        height: unset;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+}

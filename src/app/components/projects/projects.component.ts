@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ProjectCardComponent } from '../../project-card/project-card.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [RouterModule, ProjectCardComponent],
+  imports: [RouterModule, ProjectCardComponent, MatTabsModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -13,7 +14,7 @@ export class ProjectsComponent {
 
   // TODO Add tryOut links
 
-  projects = [
+  businessApplications = [
     {
       id: 'project-1',
       title: 'Slack-Clone',
@@ -37,16 +38,19 @@ export class ProjectsComponent {
       isReversed: true,
     },
     {
-      id: 'project-3',
-      title: 'Ring of Fire',
-      description: "Go out and meet friends? You don't have to! Ring of Fire also known as Circle of Death is a drinking game with cards. By connecting to Google Firebase, the game is shared with others and up to 4 players can participate per game.",
-      coverImageUrl: './../../assets/img/project covers/ring_of_fire_cover.png',
-      coverImageAlt: 'Ring of Fire Cover',
-      tags: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Material Design', 'Firebase'],
-      githubLink: 'https://github.com/LukasVolgger/ring-of-fire',
+      id: 'project-6',
+      title: 'Join',
+      description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with a mini-backend (More information can be found in the repository <a href='https://github.com/LukasVolgger/smallest_backend_ever'>smallest_backend_ever</a>).",
+      coverImageUrl: './../../assets/img/project covers/join_cover.png',
+      coverImageAlt: 'Join Cover',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/LukasVolgger/join',
       tryOutLink: '',
       isReversed: false,
     },
+  ];
+
+  multimediaApplications = [
     {
       id: 'project-4',
       title: 'My Portfolio',
@@ -56,29 +60,7 @@ export class ProjectsComponent {
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Bootstrap', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/lukas-volgger-at',
       tryOutLink: '',
-      isReversed: true,
-    },
-    {
-      id: 'project-5',
-      title: 'Sharkie',
-      description: "Sharkie is a small browser game written with HTML, CSS and JavaScript. The focus is on object-oriented programming with JavaScript.",
-      coverImageUrl: './../../assets/img/project covers/sharkie_cover.png',
-      coverImageAlt: 'Sharkie Cover',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/LukasVolgger/sharkie',
-      tryOutLink: '',
       isReversed: false,
-    },
-    {
-      id: 'project-6',
-      title: 'Join',
-      description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with a mini-backend (More information can be found in the repository <a href='https://github.com/LukasVolgger/smallest_backend_ever'>smallest_backend_ever</a>).",
-      coverImageUrl: './../../assets/img/project covers/join_cover.png',
-      coverImageAlt: 'Join Cover',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/LukasVolgger/join',
-      tryOutLink: '',
-      isReversed: true,
     },
     {
       id: 'project-7',
@@ -89,18 +71,7 @@ export class ProjectsComponent {
       tags: ['HTML', 'CSS', 'JavaScript', 'REST API', 'Bootstrap'],
       githubLink: 'https://github.com/LukasVolgger/pokedex',
       tryOutLink: '',
-      isReversed: false
-    },
-    {
-      id: 'project-8',
-      title: 'Tic Tac Toe',
-      description: "Beautiful crystals combined with a classic game.<br> This Tic Tac Toe game was programmed only with HTML, CSS and JavaScript. The unique design clearly stands out from the other games of this type.",
-      coverImageUrl: './../../assets/img/project covers/tic_tac_toe_cover.png',
-      coverImageAlt: 'Tic Tac Toe Cover',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/LukasVolgger/tic-tac-toe',
-      tryOutLink: '',
-      isReversed: true,
+      isReversed: true
     },
     {
       id: 'project-9',
@@ -124,5 +95,41 @@ export class ProjectsComponent {
       tryOutLink: '',
       isReversed: true,
     }
+  ];
+
+  games = [
+    {
+      id: 'project-3',
+      title: 'Ring of Fire',
+      description: "Go out and meet friends? You don't have to! Ring of Fire also known as Circle of Death is a drinking game with cards. By connecting to Google Firebase, the game is shared with others and up to 4 players can participate per game.",
+      coverImageUrl: './../../assets/img/project covers/ring_of_fire_cover.png',
+      coverImageAlt: 'Ring of Fire Cover',
+      tags: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Material Design', 'Firebase'],
+      githubLink: 'https://github.com/LukasVolgger/ring-of-fire',
+      tryOutLink: '',
+      isReversed: false,
+    },
+    {
+      id: 'project-5',
+      title: 'Sharkie',
+      description: "Sharkie is a small browser game written with HTML, CSS and JavaScript. The focus is on object-oriented programming with JavaScript.",
+      coverImageUrl: './../../assets/img/project covers/sharkie_cover.png',
+      coverImageAlt: 'Sharkie Cover',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/LukasVolgger/sharkie',
+      tryOutLink: '',
+      isReversed: true,
+    },
+    {
+      id: 'project-8',
+      title: 'Tic Tac Toe',
+      description: "Beautiful crystals combined with a classic game.<br> This Tic Tac Toe game was programmed only with HTML, CSS and JavaScript. The unique design clearly stands out from the other games of this type.",
+      coverImageUrl: './../../assets/img/project covers/tic_tac_toe_cover.png',
+      coverImageAlt: 'Tic Tac Toe Cover',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/LukasVolgger/tic-tac-toe',
+      tryOutLink: '',
+      isReversed: false,
+    },
   ];
 }

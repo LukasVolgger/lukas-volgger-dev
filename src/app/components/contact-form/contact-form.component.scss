@@ -1,0 +1,88 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 600px;
+}
+
+.contact-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.form-field {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    color: #639DFC !important;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 360px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .contact-form {
+        width: 80%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .contact-form {
+        width: 60%;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .contact-form {
+        width: 55%;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .contact-form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1650px) {
+    .contact-form {
+        width: 45%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .contact-form {
+        width: 40%;
+    }
+}

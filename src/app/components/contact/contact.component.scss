@@ -23,26 +23,6 @@
     }
 }
 
-.contact-form {
-    width: 600px;
-}
-
-.contact-submit {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 16px;
-}
-
-.form-label {
-    font-weight: 600;
-}
-
-.form-control {
-    background-color: #EEF4FF;
-    border: none;
-    resize: none;
-}
-
 a {
     color: #639DFC;
     text-decoration: none;
@@ -52,33 +32,21 @@ a {
     }
 }
 
+.contact-form {
+    width: 100%;
+}
+
 // ######################################################################### Media queries
 // Extra small devices (max 360px)
 @media (max-width: 360px) {
     .content {
         padding: 0 16px 0 16px;
     }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .form-label {
-        font-size: 14px;
-    }
 }
 
 @media (min-width: 360px) {
     .content {
         padding: 0 16px 0 16px;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .form-label {
-        font-size: 14px;
     }
 }
 
@@ -87,48 +55,11 @@ a {
     .content {
         padding: 0 32px 0 32px;
     }
-
-    .contact-form {
-        width: 80%;
-    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .content {
         padding: 0 64px 0 64px;
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    .contact-form {
-        width: 60%;
-    }
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .contact-form {
-        width: 55%;
-    }
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-    .contact-form {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1650px) {
-    .contact-form {
-        width: 45%;
-    }
-}
-
-@media (min-width: 2000px) {
-    .contact-form {
-        width: 40%;
     }
 }

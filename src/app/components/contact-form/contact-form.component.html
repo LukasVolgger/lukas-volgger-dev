@@ -1,0 +1,28 @@
+<div class="content container-fluid">
+    <form [formGroup]="contactForm" class="contact-form">
+        <mat-form-field class="form-field">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name" name="name" required>
+            <mat-icon matSuffix>person</mat-icon>
+            <mat-error>{{getErrorMessage('name')}}</mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" formControlName="email" name="email" required>
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-hint>Your email will never be passed on to third parties. Read <a routerLink="/legal-notice"
+                    fragment="data-protection">privacy policy</a> for more details.</mat-hint>
+            <mat-error>{{getErrorMessage('email')}}</mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-field">
+            <mat-label>Message</mat-label>
+            <textarea matInput placeholder="Message" formControlName="message" name="message" rows="8"
+                required></textarea>
+            <mat-icon matSuffix>abc</mat-icon>
+            <mat-error>{{getErrorMessage('message')}}</mat-error>
+        </mat-form-field>
+        <div class="contact-submit">
+            <button type="submit" mat-raised-button color="primary" class="btn">Send </button>
+        </div>
+    </form>
+</div>

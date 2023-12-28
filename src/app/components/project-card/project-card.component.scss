@@ -4,7 +4,7 @@
     padding: 96px;
     gap: 128px;
     width: 100%;
-    background-color: var(--section-col);
+    background-color: var(--section-color);
     margin-bottom: 32px;
 
     h2 {
@@ -15,7 +15,7 @@
 
     p {
         text-align: center;
-        color: var(--description-col);
+        color: var(--description-color);
         width: 80%;
     }
 
@@ -34,15 +34,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    a {
-        color: #639DFC;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
 }
 
 .tags-container {
@@ -53,10 +44,10 @@
     margin-bottom: 16px;
 
     span {
-        border: 1px solid var(--primary-col);
+        border: 1px solid var(--primary-color);
         border-radius: 0.375rem;
         padding: 4px;
-        color: var(--primary-col);
+        color: var(--primary-color);
     }
 }
 

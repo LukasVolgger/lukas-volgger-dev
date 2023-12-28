@@ -11,10 +11,10 @@ button {
     height: 56px;
     padding: 0;
     z-index: 1;
-    background-color: var(--black-col);
+    background-color: var(--primary-color);
 
     &:hover {
-        background-color: var(--black-col);
+        background-color: var(--primary-color);
     }
 }
 

@@ -17,14 +17,10 @@
         font-weight: 600;
         margin-bottom: 16px;
     }
-
-    p {
-        color: rgb(96, 96, 96);
-    }
 }
 
 a {
-    color: #639DFC;
+    color: var(--link-color) !important;
     text-decoration: none;
 
     &:hover {

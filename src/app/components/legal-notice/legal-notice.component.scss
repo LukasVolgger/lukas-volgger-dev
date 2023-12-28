@@ -10,7 +10,7 @@ h3 {
 }
 
 a {
-    color: #639DFC;
+    color: var(--link-color);
     text-decoration: none;
 
     &:hover {

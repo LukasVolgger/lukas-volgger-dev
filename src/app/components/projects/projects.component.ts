@@ -40,7 +40,7 @@ export class ProjectsComponent {
     {
       id: 'project-6',
       title: 'Join',
-      description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with a mini-backend (More information can be found in the repository <a href='https://github.com/LukasVolgger/smallest_backend_ever'>smallest_backend_ever</a>).",
+      description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with small JSON-based backend.",
       coverImageUrl: './../../assets/img/project covers/join_cover.png',
       coverImageAlt: 'Join Cover',
       tags: ['HTML', 'CSS', 'JavaScript'],

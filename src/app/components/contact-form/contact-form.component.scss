@@ -19,12 +19,27 @@
     width: 100%;
 }
 
+:host ::ng-deep.mat-mdc-text-field-wrapper,
+:host ::ng-deep.mat-mdc-text-field,
+:host ::ng-deep.mat-mdc-text-field--filled,
+:host ::ng-deep.mat-mdc-text-field--invalid,
+.mat-focused,
+.form-field {
+    background: rgba(0, 0, 0, .05) !important;
+}
+
+// HACKFIX
+:host ::ng-deep.mdc-text-field {
+    position: sticky !important;
+    will-change: inherit;
+}
+
 textarea {
     resize: none;
 }
 
 a {
-    color: #639DFC !important;
+    color: var(--link-color) !important;
     text-decoration: none;
     cursor: pointer;
 

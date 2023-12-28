@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .content {
+        margin-bottom: 0;
+
+        h2 {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media (min-width: 360px) {
+    .content {
+        margin-bottom: 0;
+
+        h2 {
+            margin-bottom: 32px;
+        }
+    }
+}

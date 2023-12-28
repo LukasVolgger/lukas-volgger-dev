@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
             document.getElementById('nav-link-home')?.classList.add('nav-link-active');
 
             document.getElementById('nav-link-about-me')?.classList.remove('nav-link-active');
-            document.getElementById('nav-link-my-work')?.classList.remove('nav-link-active');
+            document.getElementById('nav-link-projects')?.classList.remove('nav-link-active');
             document.getElementById('nav-link-contact')?.classList.remove('nav-link-active');
             break;
 
@@ -37,12 +37,12 @@ export class HeaderComponent implements OnInit {
             document.getElementById('nav-link-about-me')?.classList.add('nav-link-active');
 
             document.getElementById('nav-link-home')?.classList.remove('nav-link-active');
-            document.getElementById('nav-link-my-work')?.classList.remove('nav-link-active');
+            document.getElementById('nav-link-projects')?.classList.remove('nav-link-active');
             document.getElementById('nav-link-contact')?.classList.remove('nav-link-active');
             break;
 
-          case '/#my-work':
-            document.getElementById('nav-link-my-work')?.classList.add('nav-link-active');
+          case '/#projects':
+            document.getElementById('nav-link-projects')?.classList.add('nav-link-active');
 
             document.getElementById('nav-link-home')?.classList.remove('nav-link-active');
             document.getElementById('nav-link-about-me')?.classList.remove('nav-link-active');
@@ -54,14 +54,14 @@ export class HeaderComponent implements OnInit {
 
             document.getElementById('nav-link-home')?.classList.remove('nav-link-active');
             document.getElementById('nav-link-about-me')?.classList.remove('nav-link-active');
-            document.getElementById('nav-link-my-work')?.classList.remove('nav-link-active');
+            document.getElementById('nav-link-projects')?.classList.remove('nav-link-active');
             break;
 
           case '/legal-notice':
             document.getElementById('nav-link-contact')?.classList.remove('nav-link-active');
             document.getElementById('nav-link-home')?.classList.remove('nav-link-active');
             document.getElementById('nav-link-about-me')?.classList.remove('nav-link-active');
-            document.getElementById('nav-link-my-work')?.classList.remove('nav-link-active');
+            document.getElementById('nav-link-projects')?.classList.remove('nav-link-active');
             break;
 
         }

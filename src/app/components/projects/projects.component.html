@@ -1,0 +1,6 @@
+<div class="content" id="projects">
+    <h2 class="page-heading">Projects</h2>
+    @for (project of projects; track $index) {
+    <app-project-card [projectData]="project"></app-project-card>
+    }
+</div>

@@ -3,12 +3,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-contact-me',
+  selector: 'app-contact',
   standalone: true,
   imports: [RouterModule, MatButtonModule],
-  templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss'
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.scss'
 })
-export class ContactMeComponent {
+export class ContactComponent {
 
 }

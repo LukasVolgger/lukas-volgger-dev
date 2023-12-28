@@ -11,13 +11,10 @@ button {
     height: 56px;
     padding: 0;
     z-index: 1;
+    background-color: var(--black-col);
 
-    img {
-        padding: 18px;
-        // Change color to white on hover
-        // &:hover {
-        //     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(4370%) hue-rotate(303deg) brightness(122%) contrast(100%);
-        // }
+    &:hover {
+        background-color: var(--black-col);
     }
 }
 

@@ -11,10 +11,10 @@
         <p [innerHTML]="projectData.description"></p>
         <div class="project-btns">
             <a [href]="projectData.githubLink" target="_blank">
-                <button type="button" class="btn btn-outline-primary">GitHub</button>
+                <button type="button" mat-stroked-button color="primary" class="btn">GitHub</button>
             </a>
             <a [href]="projectData.tryOutLink" target="_blank">
-                <button type="button" class="btn btn-primary">Try out</button>
+                <button type="button" mat-raised-button color="primary" class="btn">Try out</button>
             </a>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ProjectCardComponent } from '../../project-card/project-card.component';
+import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({

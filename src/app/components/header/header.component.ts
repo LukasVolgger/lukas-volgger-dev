@@ -12,20 +12,21 @@ import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
-  constructor(private router: Router, private tabService: ProjectsTabService, private scrollSpyService: ScrollSpyService) {
-    this.handleNavLinks();
-  }
-
-  setActiveTab(tab: string) {
-    this.tabService.setActiveTab(tab);
-  }
+  constructor(private router: Router, private tabService: ProjectsTabService, private scrollSpyService: ScrollSpyService) { }
 
   ngAfterViewInit() {
     this.scrollSpyService.spy({ thresholdBottom: 50 });
     this.scrollSpyService.activeSpyTarget.subscribe(
       (activeTargetName: string) => activeTargetName !== null ? this.setActiveNavigationTarget(activeTargetName) : ''
     );
+  }
+
+  /**
+   * Sets the active projects tab
+   * @param tab The name of the tab
+   */
+  setActiveTab(tab: string) {
+    this.tabService.setActiveTab(tab);
   }
 
   /**
@@ -48,32 +49,6 @@ export class HeaderComponent {
     if (targetName === 'contact') {
       this.contactLinkAcive();
     }
-  }
-
-  /**
-   * Displays the current position in the navigation
-   */
-  handleNavLinks() {
-    this.router.events.forEach((event) => {
-      if (event instanceof NavigationEnd) {
-        const url = this.router.url;
-
-        switch (url) {
-          case '/':
-            this.homeLinkActive();
-            break;
-          case '/#about-me-section':
-            this.aboutMeLinkActive();
-            break;
-          case '/#projects':
-            this.projectLinkActive();
-            break;
-          case '/#contact':
-            this.contactLinkAcive();
-            break;
-        }
-      }
-    });
   }
 
   homeLinkActive() {

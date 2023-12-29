@@ -3,11 +3,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
 import { ProjectsTabService } from '../../services/projects-tab.service';
 import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
+import { LogoComponent } from '../logo/logo.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule, MatIconModule, ScrollSpyModule],
+  imports: [RouterModule, MatIconModule, ScrollSpyModule, LogoComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

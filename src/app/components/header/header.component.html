@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-mobile fixed-top border-spacing">
         <div class="container-fluid">
-            <a routerLink="" title="Home"><img class="nav-logo" src="../../assets/img/logo.png" alt="Logo"></a>
+            <a routerLink="" title="Home" class="logo-link"><app-logo></app-logo></a>
             <button mat-icon-button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" class="offcanvas-btn">
                 <mat-icon>menu</mat-icon>
@@ -59,8 +59,7 @@
         </div>
     </nav>
     <nav class="navbar navbar-desktop fixed-top border-spacing">
-        <a routerLink="" fragment="home" title="Home"><img class="nav-logo" src="../../assets/img/logo.png"
-                alt="Logo"></a>
+        <a routerLink="" fragment="home" title="Home" class="logo-link"><app-logo></app-logo></a>
         <div class="nav-links-container">
             <a id="nav-link-home" class="nav-link nav-link-active" routerLink="" fragment="home">Home</a>
             <a id="nav-link-about-me" class="nav-link" routerLink="" fragment="about-me-section">About Me</a>

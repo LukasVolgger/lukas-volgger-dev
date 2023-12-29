@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { ProjectsTabService } from '../../services/projects-tab.service';
 
 @Component({
   selector: 'app-projects',
@@ -10,9 +11,37 @@ import { MatTabsModule } from '@angular/material/tabs';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  activeTabIndex = 0;
 
   // TODO Add tryOut links
+
+  constructor(private tabService: ProjectsTabService) { }
+
+  ngOnInit() {
+    this.tabService.activeTab$.subscribe((activeTab) => {
+      // Update the active tab index based on the received tab name
+      this.activeTabIndex = this.getTabIndex(activeTab);
+    });
+  }
+
+  /**
+   * Returns the index based on tab names
+   * @param tab string
+   * @returns integer
+   */
+  getTabIndex(tab: string): number {
+    switch (tab) {
+      case 'Business Apps':
+        return 0;
+      case 'Multimedia Apps':
+        return 1;
+      case 'Games':
+        return 2;
+      default:
+        return 0;
+    }
+  }
 
   businessApps = [
     {

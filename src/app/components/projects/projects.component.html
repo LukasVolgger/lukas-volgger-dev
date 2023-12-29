@@ -1,7 +1,7 @@
 <div class="content" id="projects">
     <h2 class="page-heading">Projects</h2>
 
-    <mat-tab-group>
+    <mat-tab-group [selectedIndex]="activeTabIndex">
         <mat-tab label="Business Apps">
             @for (project of businessApps; track $index) {
             <app-project-card [projectData]="project"></app-project-card>

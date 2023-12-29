@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
+import { ProjectsTabService } from '../../services/projects-tab.service';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +10,14 @@ import { Router, NavigationEnd, RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private tabService: ProjectsTabService) {
     // this.handleNavLinks();
   }
 
-  ngOnInit(): void {
+  setActiveTab(tab: string) {
+    this.tabService.setActiveTab(tab);
   }
 
   /**

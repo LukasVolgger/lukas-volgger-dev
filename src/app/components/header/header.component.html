@@ -28,14 +28,17 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Projects</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" routerLink="" fragment="project-1"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Business Apps</a>
+                                <li><a (click)="setActiveTab('Business Apps')" class="dropdown-item" routerLink=""
+                                        fragment="projects" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasNavbar">Business Apps</a>
                                 </li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-4"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Multimedia Apps</a>
+                                <li><a (click)="setActiveTab('Multimedia Apps')" class="dropdown-item" routerLink=""
+                                        fragment="projects" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasNavbar">Multimedia Apps</a>
                                 </li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-3"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Games</a>
+                                <li><a (click)="setActiveTab('Games')" class="dropdown-item" routerLink=""
+                                        fragment="projects" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasNavbar">Games</a>
                                 </li>
                             </ul>
                         </li>

@@ -2,15 +2,16 @@
     <nav class="navbar navbar-mobile fixed-top border-spacing">
         <div class="container-fluid">
             <a routerLink="" title="Home"><img class="nav-logo" src="../../assets/img/logo.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button mat-icon-button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" class="offcanvas-btn">
+                <mat-icon>menu</mat-icon>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button mat-icon-button type="button" data-bs-dismiss="offcanvas" aria-label="Close"
+                        class="offcanvas-btn"><mat-icon>close</mat-icon></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -28,30 +29,13 @@
                                 aria-expanded="false">Projects</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" routerLink="" fragment="project-1"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Slack-Clone</a>
-                                </li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-2"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Simple-CRM</a></li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-3"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Ring of Fire</a>
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Business Apps</a>
                                 </li>
                                 <li><a class="dropdown-item" routerLink="" fragment="project-4"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">My Portfolio</a>
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Multimedia Apps</a>
                                 </li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-5"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Sharkie</a></li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-6"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Join</a></li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-7"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Pokédex</a></li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-8"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Tic Tac Toe</a>
-                                </li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-9"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Delivery
-                                        Service</a></li>
-                                <li><a class="dropdown-item" routerLink="" fragment="project-10"
-                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Photo Gallery</a>
+                                <li><a class="dropdown-item" routerLink="" fragment="project-3"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Games</a>
                                 </li>
                             </ul>
                         </li>

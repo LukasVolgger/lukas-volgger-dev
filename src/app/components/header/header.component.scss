@@ -31,6 +31,25 @@ nav {
 .offcanvas,
 .dropdown-menu {
     border: none;
+    background-color: var(--background-color);
+}
+
+.show {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    color: var(--link-color);
+    border-bottom: solid 2px transparent;
+
+    &:hover {
+        background: none;
+        color: var(--primary-color);
+        font-weight: 500;
+        border-bottom: solid 2px var(--primary-color);
+        transition: all 125ms ease-in-out;
+    }
 }
 
 .offcanvas {
@@ -39,8 +58,27 @@ nav {
     -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
-.btn-close:focus {
-    box-shadow: none;
+.offcanvas-header {
+    padding-top: 24px;
+    padding-right: 26px; // 16px padding + 10px from scrollbar
+}
+
+.offcanvas-title {
+    color: var(--primary-color);
+}
+
+.offcanvas-btn {
+    background-color: transparent;
+    border: none;
+
+    mat-icon {
+        color: var(--primary-color);
+        font-size: 1.9rem;
+    }
+}
+
+.divider {
+    color: var(--primary-color);
 }
 
 .nav-links-container {

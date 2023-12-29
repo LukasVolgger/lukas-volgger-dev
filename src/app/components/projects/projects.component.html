@@ -2,13 +2,13 @@
     <h2 class="page-heading">Projects</h2>
 
     <mat-tab-group>
-        <mat-tab label="Business Applications">
-            @for (project of businessApplications; track $index) {
+        <mat-tab label="Business Apps">
+            @for (project of businessApps; track $index) {
             <app-project-card [projectData]="project"></app-project-card>
             }
         </mat-tab>
-        <mat-tab label="Multimedia Applications">
-            @for (project of multimediaApplications; track $index) {
+        <mat-tab label="Multimedia Apps">
+            @for (project of multimediaApps; track $index) {
             <app-project-card [projectData]="project"></app-project-card>
             }
         </mat-tab>

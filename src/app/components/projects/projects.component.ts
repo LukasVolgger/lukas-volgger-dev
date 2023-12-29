@@ -14,7 +14,7 @@ export class ProjectsComponent {
 
   // TODO Add tryOut links
 
-  businessApplications = [
+  businessApps = [
     {
       id: 'project-1',
       title: 'Slack-Clone',
@@ -50,7 +50,7 @@ export class ProjectsComponent {
     },
   ];
 
-  multimediaApplications = [
+  multimediaApps = [
     {
       id: 'project-4',
       title: 'My Portfolio',

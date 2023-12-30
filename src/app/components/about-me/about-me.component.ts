@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
+import { ScrollSpyModule } from '@avtest/ng-spy';
 
 @Component({
   selector: 'app-about-me',
@@ -15,7 +15,7 @@ export class AboutMeComponent implements OnInit {
   timestampNow: number = new Date().getTime();
   myAgeInYears: number = 0;
 
-  constructor(private scrollSpyService: ScrollSpyService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.myAgeInYears = Math.floor((this.timestampNow - this.myBirthdayTimestamp) / 31556926000);

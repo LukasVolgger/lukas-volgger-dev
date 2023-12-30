@@ -12,13 +12,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar-mobile.component.scss'
 })
 export class NavbarMobileComponent {
-  constructor(private tabService: ProjectsTabService) { }
+  constructor(private projectsTabService: ProjectsTabService) { }
 
   /**
    * Sets the active projects tab
    * @param tab The name of the tab
    */
   setActiveTab(tab: string) {
-    this.tabService.setActiveTab(tab);
+    this.projectsTabService.setActiveTab(tab);
   }
 }

@@ -5,7 +5,6 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProjectsTabService {
-
   constructor() { }
 
   private activeTabSubject = new BehaviorSubject<string>(''); // Initial active tab is an empty string

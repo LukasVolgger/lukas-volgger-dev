@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
+import { ScrollSpyModule } from '@avtest/ng-spy';
 
 @Component({
   selector: 'app-contact',
@@ -12,5 +12,5 @@ import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(private scrollSpyService: ScrollSpyService) { }
+  constructor() { }
 }

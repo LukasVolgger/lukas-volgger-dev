@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ProjectsTabService } from '../../services/projects-tab.service';
-import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
+import { ScrollSpyModule } from '@avtest/ng-spy';
 
 @Component({
   selector: 'app-projects',
@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
 
   // TODO Add tryOut links
 
-  constructor(private tabService: ProjectsTabService, private scrollSpyService: ScrollSpyService) { }
+  constructor(private tabService: ProjectsTabService) { }
 
   ngOnInit() {
     this.tabService.activeTab$.subscribe((activeTab) => {

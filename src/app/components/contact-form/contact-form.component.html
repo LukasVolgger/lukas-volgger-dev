@@ -1,5 +1,5 @@
 <div class="content container-fluid">
-    <form [formGroup]="contactForm" class="contact-form">
+    <form [formGroup]="contactForm" class="contact-form" (ngSubmit)="onSubmit()">
         <mat-form-field class="form-field">
             <mat-label>Name</mat-label>
             <input matInput placeholder="Name" formControlName="name" name="name" required>

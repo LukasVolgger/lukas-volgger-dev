@@ -4,6 +4,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { DialogService } from '../../services/dialog.service';
 
 
 @Component({
@@ -27,7 +28,11 @@ export class ContactFormComponent {
     message: new FormControl('', [Validators.required, Validators.minLength(3)]),
   });
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, private dialogService: DialogService) { }
+
+  onSubmit() {
+    this.dialogService.openSuccessDialog();
+  }
 
   /**
    * Retrieves the message for the user and displays it at the frontend

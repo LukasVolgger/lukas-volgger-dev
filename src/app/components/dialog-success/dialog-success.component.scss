@@ -1,10 +1,13 @@
-.content {
+.dialog-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 160px);
-    gap: 16px;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: end;
 }
 
 .alert {
@@ -17,7 +20,7 @@
     stroke-dashoffset: 166;
     stroke-width: 2;
     stroke-miterlimit: 10;
-    stroke: #7ac142;
+    stroke: var(--success-color);
     fill: none;
     animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
@@ -30,7 +33,7 @@
     stroke-width: 6;
     stroke: #fff;
     stroke-miterlimit: 10;
-    box-shadow: inset 0px 0px 0px #7ac142;
+    box-shadow: inset 0px 0px 0px var(--success-color);
     animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
 }
 
@@ -61,49 +64,6 @@
 
 @keyframes fill {
     100% {
-        box-shadow: inset 0px 0px 0px 48px #7ac142;
-    }
-}
-
-// ######################################################################### Media queries
-// Extra small devices (max 360px)
-@media (max-width: 360px) {
-    .content {
-        height: calc(100vh - 131px);
-    }
-
-    .alert {
-        width: unset;
-    }
-}
-
-@media (min-width: 360px) {
-    .content {
-        height: calc(100vh - 131px);
-    }
-
-    .alert {
-        width: unset;
-    }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .content {
-        height: calc(100vh - 138px);
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .content {
-        height: calc(100vh - 170px);
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    .content {
-        height: calc(100vh - 208px);
+        box-shadow: inset 0px 0px 0px 48px var(--success-color);
     }
 }

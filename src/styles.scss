@@ -1,13 +1,14 @@
 // ######################################################################### Variables
 :root {
     // Colors
-    --link-color: var(--acctent-color);
+    --link-color: var(--accent-color);
     --black-color: #282828;
     --red-color: #ff0050;
     --background-color: #2c2c2c;
     --section-color: #303030;
     --primary-color: #c2185b;
-    --acctent-color: #607d8b;
+    --accent-color: #607d8b;
+    --success-color: var(--primary-color);
     --text-color: #ffffff;
     --description-color: #c7c7c7;
 }

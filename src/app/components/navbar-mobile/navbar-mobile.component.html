@@ -1,0 +1,58 @@
+<nav class="navbar header-nav fixed-top border-spacing">
+    <div class="container-fluid">
+        <a routerLink="" title="Home" class="logo-link"><app-logo></app-logo></a>
+        <button mat-icon-button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" class="offcanvas-btn">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+                <button mat-icon-button type="button" data-bs-dismiss="offcanvas" aria-label="Close"
+                    class="offcanvas-btn"><mat-icon>close</mat-icon></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <hr class="divider">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="" fragment="about-me-section" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a (click)="setActiveTab('Business Apps')" class="dropdown-item" routerLink=""
+                                    fragment="projects" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar">Business Apps</a>
+                            </li>
+                            <li><a (click)="setActiveTab('Multimedia Apps')" class="dropdown-item" routerLink=""
+                                    fragment="projects" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar">Multimedia Apps</a>
+                            </li>
+                            <li><a (click)="setActiveTab('Games')" class="dropdown-item" routerLink=""
+                                    fragment="projects" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar">Games</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="" fragment="contact"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Contact</a>
+                    </li>
+                    <li>
+                        <hr class="divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/legal-information" fragment="start"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">Legal Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

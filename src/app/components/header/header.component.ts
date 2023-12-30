@@ -1,33 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { Router, NavigationEnd, RouterModule } from '@angular/router';
-import { ProjectsTabService } from '../../services/projects-tab.service';
+import { Component } from '@angular/core';
 import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
-import { LogoComponent } from '../logo/logo.component';
+import { NavbarDesktopComponent } from '../navbar-desktop/navbar-desktop.component';
+import { NavbarMobileComponent } from '../navbar-mobile/navbar-mobile.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule, MatIconModule, ScrollSpyModule, LogoComponent],
+  imports: [ScrollSpyModule, NavbarDesktopComponent, NavbarMobileComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private router: Router, private tabService: ProjectsTabService, private scrollSpyService: ScrollSpyService) { }
+  constructor(private scrollSpyService: ScrollSpyService) { }
 
   ngAfterViewInit() {
     this.scrollSpyService.spy({ thresholdBottom: 50 });
     this.scrollSpyService.activeSpyTarget.subscribe(
       (activeTargetName: string) => activeTargetName !== null ? this.setActiveNavigationTarget(activeTargetName) : ''
     );
-  }
-
-  /**
-   * Sets the active projects tab
-   * @param tab The name of the tab
-   */
-  setActiveTab(tab: string) {
-    this.tabService.setActiveTab(tab);
   }
 
   /**

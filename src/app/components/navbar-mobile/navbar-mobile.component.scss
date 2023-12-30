@@ -1,0 +1,97 @@
+.container-fluid {
+    padding: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas,
+.dropdown-menu {
+    border: none;
+    background-color: var(--background-color);
+}
+
+.show {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    color: var(--link-color);
+    border-bottom: solid 2px transparent;
+
+    &:hover {
+        background: none;
+        color: var(--primary-color);
+        font-weight: 500;
+        border-bottom: solid 2px var(--primary-color);
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.offcanvas {
+    box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.offcanvas-header {
+    padding-top: 24px;
+    padding-right: 26px; // 16px padding + 10px from scrollbar
+}
+
+.offcanvas-title {
+    color: var(--primary-color);
+}
+
+.offcanvas-btn {
+    background-color: transparent;
+    border: none;
+
+    mat-icon {
+        color: var(--primary-color);
+        font-size: 1.9rem;
+    }
+}
+
+.divider {
+    color: var(--primary-color);
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .container-fluid {
+        gap: 32px;
+    }
+}
+
+@media (min-width: 360px) {
+    .container-fluid {
+        gap: 32px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .container-fluid {
+        gap: 64px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .container-fluid {
+        justify-content: space-between;
+    }
+}

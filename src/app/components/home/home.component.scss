@@ -6,7 +6,7 @@
     background-size: cover;
     margin-bottom: 32px;
     height: 100vh;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 
     h1 {
         color: white;
@@ -26,6 +26,7 @@
 .arrow:before {
     position: absolute;
     left: 50%;
+    z-index: 1;
 }
 
 .arrow {

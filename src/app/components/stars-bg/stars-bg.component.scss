@@ -1,0 +1,83 @@
+// Configuration
+$star-color: var(--primary-color);
+$star-animation-delay: 3s;
+$star-width: 1px;
+$star-length: 300px;
+
+.stars-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .star {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #ffffff;
+        border-radius: 50%;
+        animation: animate 3s linear infinite;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: $star-length;
+            height: $star-width;
+            background: linear-gradient(90deg, $star-color, transparent);
+        }
+    }
+
+    @for $i from 1 through 9 {
+        $delay: 0.2s * $i;
+        $duration: (
+            4 - $i) * 0.5s + $star-animation-delay;
+
+        .star:nth-child(#{$i}) {
+            top: 0;
+            right: #{200 * $i}px;
+            left: initial;
+            animation-delay: $delay;
+            animation-duration: $duration;
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0
+        );
+    opacity: 1;
+}
+
+70% {
+    opacity: 1;
+}
+
+100% {
+    transform: rotate(315deg) translateX(-100vw);
+    opacity: 0;
+}
+}
+
+// ######################################################################### Media queries
+// Extra small devices (max 360px)
+@media (max-width: 360px) {
+    .stars-wrapper {
+        transform: translateX(60%);
+    }
+}
+
+@media (min-width: 360px) {
+    .stars-wrapper {
+        transform: translateX(100%);
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .stars-wrapper {
+        transform: translateX(0%);
+    }
+}

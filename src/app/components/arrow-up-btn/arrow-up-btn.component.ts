@@ -5,13 +5,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-btt-btn',
+  selector: 'app-arrow-up-btn',
   standalone: true,
   imports: [CommonModule, RouterModule, MatButtonModule, MatIconModule],
-  templateUrl: './btt-btn.component.html',
-  styleUrl: './btt-btn.component.scss'
+  templateUrl: './arrow-up-btn.component.html',
+  styleUrl: './arrow-up-btn.component.scss'
 })
-export class BackToTopBtnComponent implements OnInit {
+export class ArrowUpBtnComponent implements OnInit {
   buttonVisible: boolean = false;
 
   constructor(private location: Location, private cdr: ChangeDetectorRef) {

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BttBtnComponent } from './btt-btn.component';
+import { BttBtnComponent } from './arrow-up-btn.component';
 
 describe('BttBtnComponent', () => {
   let component: BttBtnComponent;

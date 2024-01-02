@@ -7,15 +7,11 @@
             <div class="profile-picture-container">
                 <img src="./../../assets/img/lukas_volgger.jpg" alt="Lukas Volgger" class="profile-img">
             </div>
-            <p class="mobile-only mobile-border-spacing">" I am a software developer from Austria, passionate gamer and
-                PC hobbyist.<br> I always wanted to know how things work "under the hood". Now I'm happy to create these
-                things myself and expand my skills every day! "</p>
+            <p class="mobile-only mobile-border-spacing" [innerHTML]="headerText"></p>
             <div class="about-me mobile-border-spacing">
                 <div class="about-me-description hide-mobile">
                     <h2 id="home" class="page-heading" spyTarget="about-me">About me</h2>
-                    <p>" I am a software developer from Austria, passionate gamer and PC hobbyist.<br> I always wanted
-                        to know how things work "under the hood". Now I'm happy to create these things myself and expand
-                        my skills every day! "</p>
+                    <p [innerHTML]="headerText"></p>
                 </div>
                 <div class="hyphen"></div>
                 <app-skills></app-skills>

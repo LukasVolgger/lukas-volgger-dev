@@ -11,15 +11,25 @@ import { SkillsComponent } from '../skills/skills.component';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent implements OnInit {
-  myBirthday: string = '1993-09-19';
-  myBirthdayTimestamp: number = new Date(this.myBirthday).getTime();
-  timestampNow: number = new Date().getTime();
   myAgeInYears: number = 0;
+  headerText: string = '" I am a software developer based in Austria with a fervent passion for gaming and a deep interest in PC technology.<br> I look forward to translating my enthusiasm into the development of software solutions and continuously enhancing my skills. "';
 
   constructor() { }
 
   ngOnInit(): void {
-    this.myAgeInYears = Math.floor((this.timestampNow - this.myBirthdayTimestamp) / 31556926000);
+    this.myAgeInYears = this.calcMyAge();
+  }
+
+  /**
+   * Calculates my age for the description text
+   * @returns Int my age
+   */
+  calcMyAge() {
+    const myBirthday: string = '1993-09-19';
+    const myBirthdayTimestamp: number = new Date(myBirthday).getTime();
+    const timestampNow: number = new Date().getTime();
+
+    return Math.floor((timestampNow - myBirthdayTimestamp) / 31556926000);
   }
 
 }

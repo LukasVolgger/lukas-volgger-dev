@@ -5,7 +5,7 @@
         <h2>{{ projectData.title }}</h2>
         <div class="tags-container">
             @for (tag of projectData.tags; track $index) {
-            <span>{{ tag }}</span>
+            <mat-chip class="chip">{{ tag }}</mat-chip>
             }
         </div>
         <p [innerHTML]="projectData.description"></p>

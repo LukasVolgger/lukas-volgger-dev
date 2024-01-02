@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit, afterNextRender } from '@angular/core';
+import { ChangeDetectorRef, Component, afterNextRender } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
@@ -11,19 +11,17 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './arrow-up-btn.component.html',
   styleUrl: './arrow-up-btn.component.scss'
 })
-export class ArrowUpBtnComponent implements OnInit {
+export class ArrowUpBtnComponent {
   buttonVisible: boolean = false;
 
-  constructor(private location: Location, private cdr: ChangeDetectorRef) {
+  constructor(private location: Location, private changeDetectorRef: ChangeDetectorRef) {
     afterNextRender(() => {
       window.addEventListener('scroll', () => {
         this.buttonVisible = window.scrollY >= 100;
-        this.cdr.detectChanges();
+        this.changeDetectorRef.detectChanges();
       })
     });
   }
-
-  ngOnInit(): void { }
 
   /**
    * Scroll to the top

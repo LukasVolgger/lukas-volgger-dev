@@ -10,6 +10,16 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   skills = [
     {
+      caption: 'C#',
+      imageSrc: './../../assets/img/icons/skills/csharp.svg',
+      imageAlt: 'C# Logo'
+    },
+    {
+      caption: '.NET',
+      imageSrc: './../../assets/img/icons/skills/dotnet.svg',
+      imageAlt: '.NET Logo'
+    },
+    {
       caption: 'Java',
       imageSrc: './../../assets/img/icons/skills/java.svg',
       imageAlt: 'Java Logo'
@@ -43,6 +53,11 @@ export class SkillsComponent {
       caption: 'SQL',
       imageSrc: './../../assets/img/icons/skills/sql.svg',
       imageAlt: 'SQL Logo'
+    },
+    {
+      caption: 'AWS',
+      imageSrc: './../../assets/img/icons/skills/aws.svg',
+      imageAlt: 'AWS Logo'
     },
     {
       caption: 'Docker',

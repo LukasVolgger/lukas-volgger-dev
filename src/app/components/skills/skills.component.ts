@@ -25,6 +25,16 @@ export class SkillsComponent {
       imageAlt: 'Java Logo'
     },
     {
+      caption: 'Spring Boot',
+      imageSrc: './../../assets/img/icons/skills/spring_boot.svg',
+      imageAlt: 'Spring Boot Logo'
+    },
+    {
+      caption: 'Play',
+      imageSrc: './../../assets/img/icons/skills/play_framework.svg',
+      imageAlt: 'Play Framework Logo'
+    },
+    {
       caption: 'TypeScript',
       imageSrc: './../../assets/img/icons/skills/typescript.svg',
       imageAlt: 'TypeScript Logo'

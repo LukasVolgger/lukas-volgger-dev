@@ -15,6 +15,8 @@ import { ScrollSpyModule } from '@avtest/ng-spy';
 export class ProjectsComponent implements OnInit {
   activeTabIndex = 0;
 
+  // TODO Add preview images
+  // TODO Remove old cover images
   // TODO Add tryOut links
 
   constructor(private tabService: ProjectsTabService) { }
@@ -52,6 +54,11 @@ export class ProjectsComponent implements OnInit {
       description: "Clone of the well-known chat app Slack.<br>This web app was developed as a learning project in a groupeffort to practice the chat features and to practice the Git workflow with multiple collaborators and branches.",
       coverImageUrl: './../../assets/img/project covers/slack-clone_cover.png',
       coverImageAlt: 'Slack-Clone Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/slack-clone',
       tryOutLink: '',
@@ -62,6 +69,11 @@ export class ProjectsComponent implements OnInit {
       description: "Simple customer management.<br>A simple CRM (Customer Relationship Management) tool with features like user registration, authentication and data storage in the backend (Firebase).",
       coverImageUrl: './../../assets/img/project covers/simple-crm_cover.png',
       coverImageAlt: 'Simple-CRM Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/simple-crm',
       tryOutLink: '',
@@ -72,6 +84,11 @@ export class ProjectsComponent implements OnInit {
       description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with small JSON-based backend.",
       coverImageUrl: './../../assets/img/project covers/join_cover.png',
       coverImageAlt: 'Join Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/join',
       tryOutLink: '',
@@ -87,6 +104,11 @@ export class ProjectsComponent implements OnInit {
       description: "My own portfolio website. This is an Angular project and written in HTML, SCSS and TypeScript.",
       coverImageUrl: './../../assets/img/project covers/portfolio_cover.png',
       coverImageAlt: 'Portfolio Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 17', 'Angular Material', 'Bootstrap', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/lukas-volgger-at',
       tryOutLink: '',
@@ -97,6 +119,11 @@ export class ProjectsComponent implements OnInit {
       description: "I wan't them all!<br> With Pokédex I can get a perfect overview of all Pokémons, search for them with autocomplete and save them as favorites! The project was created with HTML, CSS and JavaScript and all data is fetched from a REST API.",
       coverImageUrl: './../../assets/img/project covers/pokedex_cover.png',
       coverImageAlt: 'Pokédex Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'CSS', 'JavaScript', 'REST-API', 'Bootstrap'],
       githubLink: 'https://github.com/LukasVolgger/pokedex',
       tryOutLink: '',
@@ -107,6 +134,11 @@ export class ProjectsComponent implements OnInit {
       description: "Copy? I can!<br> This delivery service website was created with HTML, CSS and JavaScript inspired by Lieferando. The main focus of this project is the simulation of the simple online shopping process as well as the design. For this reason not all functionalities were implemented.",
       coverImageUrl: './../../assets/img/project covers/delivery_service_cover.png',
       coverImageAlt: 'Delivery Service Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/delivery-service',
       tryOutLink: '',
@@ -117,6 +149,11 @@ export class ProjectsComponent implements OnInit {
       description: "Simple and beautiful.<br> This photo gallery contains a collection of images to my taste. It was written with HTML, CSS and JavaScript. A search function and tags make browsing easier. Keyboard and touch controls make it easy to use.",
       coverImageUrl: './../../assets/img/project covers/photo_gallery_cover.png',
       coverImageAlt: 'Photo Gallery Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/photo-gallery',
       tryOutLink: '',
@@ -132,6 +169,11 @@ export class ProjectsComponent implements OnInit {
       description: "Go out and meet friends? You don't have to! Ring of Fire also known as Circle of Death is a drinking game with cards. By connecting to Google Firebase, the game is shared with others and up to 4 players can participate per game.",
       coverImageUrl: './../../assets/img/project covers/ring_of_fire_cover.png',
       coverImageAlt: 'Ring of Fire Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/ring-of-fire',
       tryOutLink: '',
@@ -142,6 +184,11 @@ export class ProjectsComponent implements OnInit {
       description: "Sharkie is a small browser game written with HTML, CSS and JavaScript. The focus is on object-oriented programming with JavaScript.",
       coverImageUrl: './../../assets/img/project covers/sharkie_cover.png',
       coverImageAlt: 'Sharkie Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/sharkie',
       tryOutLink: '',
@@ -152,6 +199,11 @@ export class ProjectsComponent implements OnInit {
       description: "Beautiful crystals combined with a classic game.<br> This Tic Tac Toe game was programmed only with HTML, CSS and JavaScript. The unique design clearly stands out from the other games of this type.",
       coverImageUrl: './../../assets/img/project covers/tic_tac_toe_cover.png',
       coverImageAlt: 'Tic Tac Toe Cover',
+      imageArray: [
+        '',
+        '',
+        ''
+      ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/tic-tac-toe',
       tryOutLink: '',

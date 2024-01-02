@@ -1,6 +1,6 @@
-<div [ngClass]="projectData.isReversed ? 'project row-reverse border-spacing' : 'project border-spacing'"
-    [id]="projectData.id">
-    <img [src]="projectData.coverImageUrl" [alt]="projectData.coverImageAlt">
+<div [ngClass]="projectData.isReversed ? 'project row-reverse border-spacing' : 'project border-spacing'">
+    <!-- <img [src]="projectData.coverImageUrl" [alt]="projectData.coverImageAlt"> -->
+    <app-image-carousel class="w-100" [index]="index" [imageArray]="projectData.imageArray"></app-image-carousel>
     <div class="project-description">
         <h2>{{ projectData.title }}</h2>
         <div class="tags-container">

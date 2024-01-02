@@ -17,7 +17,7 @@ export class AppComponent {
   title = 'lukas-volgger-dev';
 
   constructor(viewport: ViewportScroller, private scrollSpyService: ScrollSpyService) {
-    viewport.setOffset([0, 100])
+    viewport.setOffset([0, 110])
   }
 
   ngAfterViewInit() {

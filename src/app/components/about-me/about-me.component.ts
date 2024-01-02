@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ScrollSpyModule } from '@avtest/ng-spy';
+import { SkillsComponent } from '../skills/skills.component';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [RouterModule, ScrollSpyModule],
+  imports: [RouterModule, ScrollSpyModule, SkillsComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })

@@ -1,0 +1,30 @@
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 8px;
+    margin: 0 0 0;
+
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    figcaption {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

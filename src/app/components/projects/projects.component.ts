@@ -44,9 +44,10 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
+  // ################################################################################ Business Apps
+
   businessApps = [
     {
-      id: 'project-1',
       title: 'Slack-Clone',
       description: "Clone of the well-known chat app Slack.<br>This web app was developed as a learning project in a groupeffort to practice the chat features and to practice the Git workflow with multiple collaborators and branches.",
       coverImageUrl: './../../assets/img/project covers/slack-clone_cover.png',
@@ -57,7 +58,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: false,
     },
     {
-      id: 'project-2',
       title: 'Simple-CRM',
       description: "Simple customer management.<br>A simple CRM (Customer Relationship Management) tool with features like user registration, authentication and data storage in the backend (Firebase).",
       coverImageUrl: './../../assets/img/project covers/simple-crm_cover.png',
@@ -68,7 +68,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: true,
     },
     {
-      id: 'project-6',
       title: 'Join',
       description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with small JSON-based backend.",
       coverImageUrl: './../../assets/img/project covers/join_cover.png',
@@ -80,9 +79,10 @@ export class ProjectsComponent implements OnInit {
     },
   ];
 
+  // ################################################################################ Multimedia Apps
+
   multimediaApps = [
     {
-      id: 'project-4',
       title: 'My Portfolio',
       description: "My own portfolio website. This is an Angular project and written in HTML, SCSS and TypeScript.",
       coverImageUrl: './../../assets/img/project covers/portfolio_cover.png',
@@ -93,7 +93,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: false,
     },
     {
-      id: 'project-7',
       title: 'Pokédex',
       description: "I wan't them all!<br> With Pokédex I can get a perfect overview of all Pokémons, search for them with autocomplete and save them as favorites! The project was created with HTML, CSS and JavaScript and all data is fetched from a REST API.",
       coverImageUrl: './../../assets/img/project covers/pokedex_cover.png',
@@ -104,7 +103,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: true
     },
     {
-      id: 'project-9',
       title: 'Delivery Service',
       description: "Copy? I can!<br> This delivery service website was created with HTML, CSS and JavaScript inspired by Lieferando. The main focus of this project is the simulation of the simple online shopping process as well as the design. For this reason not all functionalities were implemented.",
       coverImageUrl: './../../assets/img/project covers/delivery_service_cover.png',
@@ -115,7 +113,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: false,
     },
     {
-      id: 'project-10',
       title: 'Photo Gallery',
       description: "Simple and beautiful.<br> This photo gallery contains a collection of images to my taste. It was written with HTML, CSS and JavaScript. A search function and tags make browsing easier. Keyboard and touch controls make it easy to use.",
       coverImageUrl: './../../assets/img/project covers/photo_gallery_cover.png',
@@ -127,9 +124,10 @@ export class ProjectsComponent implements OnInit {
     }
   ];
 
+  // ################################################################################ Games
+
   games = [
     {
-      id: 'project-3',
       title: 'Ring of Fire',
       description: "Go out and meet friends? You don't have to! Ring of Fire also known as Circle of Death is a drinking game with cards. By connecting to Google Firebase, the game is shared with others and up to 4 players can participate per game.",
       coverImageUrl: './../../assets/img/project covers/ring_of_fire_cover.png',
@@ -140,7 +138,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: false,
     },
     {
-      id: 'project-5',
       title: 'Sharkie',
       description: "Sharkie is a small browser game written with HTML, CSS and JavaScript. The focus is on object-oriented programming with JavaScript.",
       coverImageUrl: './../../assets/img/project covers/sharkie_cover.png',
@@ -151,7 +148,6 @@ export class ProjectsComponent implements OnInit {
       isReversed: true,
     },
     {
-      id: 'project-8',
       title: 'Tic Tac Toe',
       description: "Beautiful crystals combined with a classic game.<br> This Tic Tac Toe game was programmed only with HTML, CSS and JavaScript. The unique design clearly stands out from the other games of this type.",
       coverImageUrl: './../../assets/img/project covers/tic_tac_toe_cover.png',

@@ -4,3 +4,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.carousel-indicators {
+    button {
+        background-color: var(--primary-color);
+    }
+}
+
+.carousel-control-prev-icon-mat,
+.carousel-control-next-icon-mat {
+    color: var(--primary-color);
+    width: unset;
+    height: unset;
+    font-size: 3rem;
+}
+
+.carousel-img {
+    width: 100%;
+    // width: 680px;
+    // height: 365px;
+}

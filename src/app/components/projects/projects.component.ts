@@ -15,7 +15,6 @@ import { ScrollSpyModule } from '@avtest/ng-spy';
 export class ProjectsComponent implements OnInit {
   activeTabIndex = 0;
 
-  // TODO Add preview images
   // TODO Remove old cover images
   // TODO Add tryOut links
 
@@ -55,9 +54,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/slack-clone_cover.png',
       coverImageAlt: 'Slack-Clone Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/slack-clone/get_started.png',
+        './../../assets/img/projects/slack-clone/sign_up.png',
+        './../../assets/img/projects/slack-clone/chat_channel.png'
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/slack-clone',
@@ -70,9 +69,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/simple-crm_cover.png',
       coverImageAlt: 'Simple-CRM Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/simple-crm/login.png',
+        './../../assets/img/projects/simple-crm/verify_email_address.png',
+        './../../assets/img/projects/simple-crm/dashboard.png'
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/simple-crm',
@@ -85,9 +84,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/join_cover.png',
       coverImageAlt: 'Join Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/join/login.png',
+        './../../assets/img/projects/join/add_task.png',
+        './../../assets/img/projects/join/backlog.png'
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/join',
@@ -105,9 +104,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/portfolio_cover.png',
       coverImageAlt: 'Portfolio Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/portfolio/home.png',
+        './../../assets/img/projects/portfolio/about_me.png',
+        './../../assets/img/projects/portfolio/projects.png'
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 17', 'Angular Material', 'Bootstrap', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/lukas-volgger-at',
@@ -120,9 +119,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/pokedex_cover.png',
       coverImageAlt: 'Pokédex Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/pokedex/cover.png',
+        './../../assets/img/projects/pokedex/main.png',
+        './../../assets/img/projects/pokedex/details.png'
       ],
       tags: ['HTML', 'CSS', 'JavaScript', 'REST-API', 'Bootstrap'],
       githubLink: 'https://github.com/LukasVolgger/pokedex',
@@ -135,9 +134,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/delivery_service_cover.png',
       coverImageAlt: 'Delivery Service Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/delivery-service/main.png',
+        './../../assets/img/projects/delivery-service/basket.png',
+        './../../assets/img/projects/delivery-service/info.png'
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/delivery-service',
@@ -150,9 +149,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/photo_gallery_cover.png',
       coverImageAlt: 'Photo Gallery Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/photo-gallery/home.png',
+        './../../assets/img/projects/photo-gallery/details.png',
+        './../../assets/img/projects/photo-gallery/details_2.png'
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/photo-gallery',
@@ -170,9 +169,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/ring_of_fire_cover.png',
       coverImageAlt: 'Ring of Fire Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/ring-of-fire/start.png',
+        './../../assets/img/projects/ring-of-fire/game.png',
+        './../../assets/img/projects/ring-of-fire/game_2.png'
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/ring-of-fire',
@@ -185,9 +184,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/sharkie_cover.png',
       coverImageAlt: 'Sharkie Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/sharkie/cover.png',
+        './../../assets/img/projects/sharkie/level_1.png',
+        './../../assets/img/projects/sharkie/help.png',
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/sharkie',
@@ -200,9 +199,9 @@ export class ProjectsComponent implements OnInit {
       coverImageUrl: './../../assets/img/project covers/tic_tac_toe_cover.png',
       coverImageAlt: 'Tic Tac Toe Cover',
       imageArray: [
-        '',
-        '',
-        ''
+        './../../assets/img/projects/tic-tac-toe/cover.png',
+        './../../assets/img/projects/tic-tac-toe/game.png',
+        './../../assets/img/projects/tic-tac-toe/end_screen.png',
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/tic-tac-toe',

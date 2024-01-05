@@ -70,8 +70,8 @@ export class ProjectsComponent implements OnInit {
       coverImageAlt: 'Simple-CRM Cover',
       imageArray: [
         './../../assets/img/projects/simple-crm/login.png',
-        './../../assets/img/projects/simple-crm/verify_email_address.png',
-        './../../assets/img/projects/simple-crm/dashboard.png'
+        './../../assets/img/projects/simple-crm/dashboard.png',
+        './../../assets/img/projects/simple-crm/customer.png'
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/simple-crm',

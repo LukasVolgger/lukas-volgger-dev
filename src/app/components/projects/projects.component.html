@@ -8,13 +8,13 @@
             }
         </mat-tab>
         <mat-tab label="Multimedia Apps">
-            @for (project of multimediaApps; track $index) {
-            <app-project-card [projectData]="project"></app-project-card>
+            @for (project of multimediaApps; track project.title; let index = $index) {
+            <app-project-card [index]="index" [projectData]="project"></app-project-card>
             }
         </mat-tab>
         <mat-tab label="Games">
-            @for (project of games; track $index) {
-            <app-project-card [projectData]="project"></app-project-card>
+            @for (project of games; track project.title; let index = $index) {
+            <app-project-card [index]="index" [projectData]="project"></app-project-card>
             }
         </mat-tab>
     </mat-tab-group>

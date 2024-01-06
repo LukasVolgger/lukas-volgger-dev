@@ -91,7 +91,7 @@ export class ProjectsComponent implements OnInit {
   multimediaApps = [
     {
       title: 'My Portfolio',
-      description: "My own portfolio website. This is an Angular project and written in HTML, SCSS and TypeScript.",
+      description: "My personal portfolio website is a sophisticated Angular project developed using HTML, SCSS, and TypeScript. This website is designed to showcase my creative works, professional experiences, and skills in a user-friendly and aesthetically pleasing manner.",
       imageArray: [
         './../../assets/img/projects/portfolio/home-min.png',
         './../../assets/img/projects/portfolio/about_me-min.png',
@@ -104,7 +104,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: 'Pokédex',
-      description: "I wan't them all!<br> With Pokédex I can get a perfect overview of all Pokémons, search for them with autocomplete and save them as favorites! The project was created with HTML, CSS and JavaScript and all data is fetched from a REST API.",
+      description: "I want them all!<br> With Pokédex, I can get a perfect overview of all Pokémon, search for them with autocomplete, and save them as favorites! The project was created with HTML, CSS, and JavaScript, and all data is fetched from a REST API.",
       imageArray: [
         './../../assets/img/projects/pokedex/cover-min.png',
         './../../assets/img/projects/pokedex/main-min.png',
@@ -161,7 +161,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: 'Sharkie',
-      description: "Sharkie is a small browser game written with HTML, CSS and JavaScript. The focus is on object-oriented programming with JavaScript.",
+      description: "Sharkie is a captivating small browser game crafted using HTML, CSS, and JavaScript. The primary emphasis lies in the realm of object-oriented programming with JavaScript, allowing for a dynamic and interactive gaming experience.",
       imageArray: [
         './../../assets/img/projects/sharkie/cover-min.png',
         './../../assets/img/projects/sharkie/level_1-min.png',

@@ -15,7 +15,6 @@ import { ScrollSpyModule } from '@avtest/ng-spy';
 export class ProjectsComponent implements OnInit {
   activeTabIndex = 0;
 
-  // TODO Remove old cover images
   // TODO Add tryOut links
 
   constructor(private tabService: ProjectsTabService) { }
@@ -51,8 +50,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Slack-Clone',
       description: "Clone of the well-known chat app Slack.<br>This web app was developed as a learning project in a groupeffort to practice the chat features and to practice the Git workflow with multiple collaborators and branches.",
-      coverImageUrl: './../../assets/img/project covers/slack-clone_cover.png',
-      coverImageAlt: 'Slack-Clone Cover',
       imageArray: [
         './../../assets/img/projects/slack-clone/get_started-min.png',
         './../../assets/img/projects/slack-clone/sign_up-min.png',
@@ -66,8 +63,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Simple-CRM',
       description: "Simple customer management.<br>A simple CRM (Customer Relationship Management) tool with features like user registration, authentication and data storage in the backend (Firebase).",
-      coverImageUrl: './../../assets/img/project covers/simple-crm_cover.png',
-      coverImageAlt: 'Simple-CRM Cover',
       imageArray: [
         './../../assets/img/projects/simple-crm/login-min.png',
         './../../assets/img/projects/simple-crm/dashboard-min.png',
@@ -81,8 +76,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Join',
       description: "Join is a Kanbanboard web app written with HTML, CSS and JavaScript as a team project. In this project, the client - server functionality was simulated with small JSON-based backend.",
-      coverImageUrl: './../../assets/img/project covers/join_cover.png',
-      coverImageAlt: 'Join Cover',
       imageArray: [
         './../../assets/img/projects/join/login-min.png',
         './../../assets/img/projects/join/add_task-min.png',
@@ -101,8 +94,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'My Portfolio',
       description: "My own portfolio website. This is an Angular project and written in HTML, SCSS and TypeScript.",
-      coverImageUrl: './../../assets/img/project covers/portfolio_cover.png',
-      coverImageAlt: 'Portfolio Cover',
       imageArray: [
         './../../assets/img/projects/portfolio/home-min.png',
         './../../assets/img/projects/portfolio/about_me-min.png',
@@ -116,8 +107,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Pokédex',
       description: "I wan't them all!<br> With Pokédex I can get a perfect overview of all Pokémons, search for them with autocomplete and save them as favorites! The project was created with HTML, CSS and JavaScript and all data is fetched from a REST API.",
-      coverImageUrl: './../../assets/img/project covers/pokedex_cover.png',
-      coverImageAlt: 'Pokédex Cover',
       imageArray: [
         './../../assets/img/projects/pokedex/cover-min.png',
         './../../assets/img/projects/pokedex/main-min.png',
@@ -131,8 +120,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Delivery Service',
       description: "Copy? I can!<br> This delivery service website was created with HTML, CSS and JavaScript inspired by Lieferando. The main focus of this project is the simulation of the simple online shopping process as well as the design. For this reason not all functionalities were implemented.",
-      coverImageUrl: './../../assets/img/project covers/delivery_service_cover.png',
-      coverImageAlt: 'Delivery Service Cover',
       imageArray: [
         './../../assets/img/projects/delivery-service/main-min.png',
         './../../assets/img/projects/delivery-service/basket-min.png',
@@ -146,8 +133,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Photo Gallery',
       description: "Simple and beautiful.<br> This photo gallery contains a collection of images to my taste. It was written with HTML, CSS and JavaScript. A search function and tags make browsing easier. Keyboard and touch controls make it easy to use.",
-      coverImageUrl: './../../assets/img/project covers/photo_gallery_cover.png',
-      coverImageAlt: 'Photo Gallery Cover',
       imageArray: [
         './../../assets/img/projects/photo-gallery/home-min.png',
         './../../assets/img/projects/photo-gallery/details-min.png',
@@ -166,8 +151,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Ring of Fire',
       description: "Go out and meet friends? You don't have to! Ring of Fire also known as Circle of Death is a drinking game with cards. By connecting to Google Firebase, the game is shared with others and up to 4 players can participate per game.",
-      coverImageUrl: './../../assets/img/project covers/ring_of_fire_cover.png',
-      coverImageAlt: 'Ring of Fire Cover',
       imageArray: [
         './../../assets/img/projects/ring-of-fire/start-min.png',
         './../../assets/img/projects/ring-of-fire/game-min.png',
@@ -181,8 +164,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Sharkie',
       description: "Sharkie is a small browser game written with HTML, CSS and JavaScript. The focus is on object-oriented programming with JavaScript.",
-      coverImageUrl: './../../assets/img/project covers/sharkie_cover.png',
-      coverImageAlt: 'Sharkie Cover',
       imageArray: [
         './../../assets/img/projects/sharkie/cover-min.png',
         './../../assets/img/projects/sharkie/level_1-min.png',
@@ -196,8 +177,6 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Tic Tac Toe',
       description: "Beautiful crystals combined with a classic game.<br> This Tic Tac Toe game was programmed only with HTML, CSS and JavaScript. The unique design clearly stands out from the other games of this type.",
-      coverImageUrl: './../../assets/img/project covers/tic_tac_toe_cover.png',
-      coverImageAlt: 'Tic Tac Toe Cover',
       imageArray: [
         './../../assets/img/projects/tic-tac-toe/cover-min.png',
         './../../assets/img/projects/tic-tac-toe/game-min.png',

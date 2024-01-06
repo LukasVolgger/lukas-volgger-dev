@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { DialogService } from '../../services/dialog.service';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -16,22 +18,38 @@ import { DialogService } from '../../services/dialog.service';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
-  contactForm = this._formBuilder.group({
+  contactForm = this.formBuilder.group({
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),
     email: new FormControl('', [Validators.required, Validators.email]),
     message: new FormControl('', [Validators.required, Validators.minLength(3)]),
   });
 
-  constructor(private _formBuilder: FormBuilder, private dialogService: DialogService) { }
+  constructor(private formBuilder: FormBuilder, private httpClient: HttpClient, private dialogService: DialogService) { }
 
   onSubmit() {
-    this.dialogService.openSuccessDialog();
+    if (this.contactForm.valid) {
+      const formData = this.contactForm.value;
+
+      this.httpClient.post('https://scripts.lukas-volgger.dev/send_mail.php', formData)
+        .subscribe({
+          next: (response) => {
+            // console.log('Response from server:', response);
+            this.dialogService.openSuccessDialog();
+          },
+          error: (error) => {
+            // console.error('Error:', error);
+          }
+        });
+    } else {
+      // console.log('Form is invalid');
+    }
   }
 
   /**

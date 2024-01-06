@@ -21,5 +21,8 @@
 
 .carousel-img {
     width: 100%;
-    aspect-ratio: 16/9;
+    // height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    max-width: 100%;
 }

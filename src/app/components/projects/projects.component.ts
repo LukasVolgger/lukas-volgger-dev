@@ -107,7 +107,7 @@ export class ProjectsComponent implements OnInit {
       description: "I want them all!<br> With Pokédex, I can get a perfect overview of all Pokémon, search for them with autocomplete, and save them as favorites! The project was created with HTML, CSS, and JavaScript, and all data is fetched from a REST API.",
       imageArray: [
         './../../assets/img/projects/pokedex/cover-min.png',
-        './../../assets/img/projects/pokedex/main-min.png',
+        './../../assets/img/projects/pokedex/home-min.png',
         './../../assets/img/projects/pokedex/details-min.png'
       ],
       tags: ['HTML', 'CSS', 'JavaScript', 'REST-API', 'Bootstrap'],
@@ -119,7 +119,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Delivery Service',
       description: "Copy? I can!<br> This delivery service website was created with HTML, CSS and JavaScript inspired by Lieferando. The main focus of this project is the simulation of the simple online shopping process as well as the design. For this reason not all functionalities were implemented.",
       imageArray: [
-        './../../assets/img/projects/delivery-service/main-min.png',
+        './../../assets/img/projects/delivery-service/home-min.png',
         './../../assets/img/projects/delivery-service/basket-min.png',
         './../../assets/img/projects/delivery-service/info-min.png'
       ],
@@ -176,7 +176,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Tic Tac Toe',
       description: "Beautiful crystals combined with a classic game.<br> This Tic Tac Toe game was programmed only with HTML, CSS and JavaScript. The unique design clearly stands out from the other games of this type.",
       imageArray: [
-        './../../assets/img/projects/tic-tac-toe/cover-min.png',
+        './../../assets/img/projects/tic-tac-toe/start_screen-min.png',
         './../../assets/img/projects/tic-tac-toe/game-min.png',
         './../../assets/img/projects/tic-tac-toe/end_screen-min.png',
       ],

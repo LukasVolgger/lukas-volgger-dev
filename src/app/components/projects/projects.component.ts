@@ -15,8 +15,6 @@ import { ScrollSpyModule } from '@avtest/ng-spy';
 export class ProjectsComponent implements OnInit {
   activeTabIndex = 0;
 
-  // TODO Add tryOut links
-
   constructor(private tabService: ProjectsTabService) { }
 
   ngOnInit() {
@@ -29,7 +27,7 @@ export class ProjectsComponent implements OnInit {
   /**
    * Returns the index based on tab names
    * @param tab string
-   * @returns integer
+   * @returns number
    */
   getTabIndex(tab: string): number {
     switch (tab) {
@@ -57,7 +55,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/slack-clone',
-      tryOutLink: '',
+      tryOutLink: 'https://slack-clone.lukas-volgger.dev',
       isReversed: false,
     },
     {
@@ -70,7 +68,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase', 'Authentication'],
       githubLink: 'https://github.com/LukasVolgger/simple-crm',
-      tryOutLink: '',
+      tryOutLink: 'https://simple-crm.lukas-volgger.dev',
       isReversed: true,
     },
     {
@@ -83,7 +81,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/join',
-      tryOutLink: '',
+      tryOutLink: 'https://join.lukas-volgger.dev',
       isReversed: false,
     },
   ];
@@ -101,7 +99,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 17', 'Angular Material', 'Bootstrap', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/lukas-volgger-at',
-      tryOutLink: '',
+      tryOutLink: 'https://lukas-volgger.dev',
       isReversed: false,
     },
     {
@@ -114,7 +112,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'CSS', 'JavaScript', 'REST-API', 'Bootstrap'],
       githubLink: 'https://github.com/LukasVolgger/pokedex',
-      tryOutLink: '',
+      tryOutLink: 'https://pokedex.lukas-volgger.dev',
       isReversed: true
     },
     {
@@ -127,7 +125,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/delivery-service',
-      tryOutLink: '',
+      tryOutLink: 'https://delivery-service.lukas-volgger.dev',
       isReversed: false,
     },
     {
@@ -140,7 +138,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/photo-gallery',
-      tryOutLink: '',
+      tryOutLink: 'https://photo-gallery.lukas-volgger.dev',
       isReversed: true,
     }
   ];
@@ -158,7 +156,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 14', 'Angular Material', 'Firebase'],
       githubLink: 'https://github.com/LukasVolgger/ring-of-fire',
-      tryOutLink: '',
+      tryOutLink: 'https://ring-of-fire.lukas-volgger.dev',
       isReversed: false,
     },
     {
@@ -171,7 +169,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/sharkie',
-      tryOutLink: '',
+      tryOutLink: 'https://sharkie.lukas-volgger.dev',
       isReversed: true,
     },
     {
@@ -184,7 +182,7 @@ export class ProjectsComponent implements OnInit {
       ],
       tags: ['HTML', 'CSS', 'JavaScript'],
       githubLink: 'https://github.com/LukasVolgger/tic-tac-toe',
-      tryOutLink: '',
+      tryOutLink: 'https://tic-tac-toe.lukas-volgger.dev',
       isReversed: false,
     },
   ];

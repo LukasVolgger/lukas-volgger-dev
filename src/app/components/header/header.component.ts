@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, afterNextRender } from '@angular/core';
 import { ScrollSpyModule, ScrollSpyService } from '@avtest/ng-spy';
 import { NavbarDesktopComponent } from '../navbar-desktop/navbar-desktop.component';
 import { NavbarMobileComponent } from '../navbar-mobile/navbar-mobile.component';
@@ -13,7 +13,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private scrollSpyService: ScrollSpyService, private router: Router,) {
-    this.handleNavLinks();
+    afterNextRender(() => this.handleNavLinks());
   }
 
   ngAfterViewInit() {

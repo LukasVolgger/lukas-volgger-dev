@@ -1,0 +1,23 @@
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: end;
+}
+
+.alert {
+    width: 600px;
+    text-align: center;
+}
+
+.error-icon {
+    font-size: 5rem;
+    width: unset;
+    height: unset;
+    color: var(--error-color);
+}

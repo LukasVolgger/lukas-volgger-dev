@@ -45,6 +45,7 @@ export class ContactFormComponent {
           },
           error: (error) => {
             // console.error('Error:', error);
+            this.dialogService.openErrorDialog();
           }
         });
     } else {

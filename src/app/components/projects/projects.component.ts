@@ -98,7 +98,7 @@ export class ProjectsComponent implements OnInit {
         './../../assets/img/projects/portfolio/projects-min.png'
       ],
       tags: ['HTML', 'SCSS', 'TypeScript', 'Angular 17', 'Angular Material', 'Bootstrap', 'Firebase'],
-      githubLink: 'https://github.com/LukasVolgger/lukas-volgger-at',
+      githubLink: 'https://github.com/LukasVolgger/lukas-volgger-dev',
       tryOutLink: 'https://lukas-volgger.dev',
       isReversed: false,
     },

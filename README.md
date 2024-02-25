@@ -1,4 +1,4 @@
-# Project Title
+# My Portfolio Website
 My personal portfolio website is a sophisticated Angular project developed using HTML, SCSS, and TypeScript. This website is designed to showcase my creative works, professional experiences, and skills in a user-friendly and aesthetically pleasing manner.
 
 **Table of Contents**

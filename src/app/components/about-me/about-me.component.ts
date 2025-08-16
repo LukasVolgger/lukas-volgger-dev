@@ -12,7 +12,7 @@ import { SkillsComponent } from '../skills/skills.component';
 })
 export class AboutMeComponent implements OnInit {
   myAgeInYears: number = 0;
-  headerText: string = '" I am a software developer based in Austria with a fervent passion for gaming and a deep interest in PC technology.<br> I look forward to translating my enthusiasm into the development of software solutions and continuously enhancing my skills. "';
+  headerText: string = '" I am a software engineer based in Austria with a fervent passion for gaming and a deep interest in PC technology.<br> I look forward to translating my enthusiasm into the development of software solutions and continuously enhancing my skills. "';
 
   constructor() { }
 
